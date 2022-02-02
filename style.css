@@ -1,0 +1,42 @@
+.logo {
+    width: 60px;
+    height: 50px;
+    background-image: url("favicon.ico");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.birds {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    
+    
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.birds * {
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    
+    cursor: pointer;
+}
+
+button {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    background-image: url("svg/play.svg");
+    background-size: contain;
+    cursor: pointer;
+}
+
+.pause {
+    background-image: url("svg/pause.svg");
+}

@@ -11,6 +11,7 @@
     flex-direction: row;
     margin-left: auto;
     
+    
 }
 
 .header__wrapper {
@@ -23,7 +24,7 @@
     list-style: none;
     text-decoration: none;
     padding: 10px;
-    color: rgb(248, 14, 14);
+    
     cursor: pointer;
 }
 
@@ -38,4 +39,4 @@ button {
 
 .pause {
     background-image: url("svg/pause.svg");
-   
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>eco-sounds</title>
 </head>
 <body>
@@ -12,23 +14,33 @@
             <div class="header__wrapper">
                 <div class="logo"></div>
                 <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#nightingale">Соловей</a></li>
-                        <li class="nav__item"><a href="#blackbird">Дрозд</a></li>
-                        <li class="nav__item"><a href="#robin">Зарянка</a></li>
-                        <li class="nav__item"><a href="#lark">Жайворонок</a></li>
-                        <li class="nav__item"><a href="#slavka">Славка</a></li>
+                    <ul class="birds" class="nav__list">
+                        <li class="solovey" data-bird="solovey">Соловей</a></li>
+                        <li class="drozd" data-bird="drozd">Дрозд</a></li>
+                        <li class="zarynka" data-bird="zarynka">Зарянка</a></li>
+                        <li class="javoronok" data-bird="javoronok">Жайворонок</a></li>
+                        <li class="slavka" data-bird="slavka">Славка</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <audio src="audio/assets_audio_zarynka.mp3"></audio>
-    <div class="pause"></div>
-    <div class="buttons">
+    <div class="wrapper">
+        <div class="player">
+            <button class="button"></button>
+            <div class="cover"><img class="cover__img" src="img/forest.jpg" alt="cover"></div>
+        </div>
+        <div class="progress_container">
+            <audio src="audio/forest.mp3"></audio>
+        </div>
+    
         
-        <button class="play">Play audio</button>
-        <button class="stop">Stop audio</button>
+    </div>
+    
+    
+        
+        
+        
     </div>
 </body>
 <script src="app.js"></script>
